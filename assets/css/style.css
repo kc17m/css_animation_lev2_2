@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 2%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid black;
+}
+
+p {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background: green;
+    border-radius: 50%;
+    animation-name: roll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    right: 83%;
+    top: 0%;
+}
+
+p:hover {
+    animation-play-state: paused;
+}
+
+@keyframes roll {
+    25% {
+        background: yellow;
+        right: 0%;
+        top: 0%;
+    }
+
+    50% {
+        background: red;
+        right: 0%;
+        top: 83%;
+    }
+
+    75% {
+        background: blue;
+        right: 83%;
+        top: 83%;
+ }
+
